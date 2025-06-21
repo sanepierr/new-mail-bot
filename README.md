@@ -4,6 +4,10 @@ Automatically fetches the latest technology news from top sites (via RSS feeds) 
 
 # Tech News Email Bot
 
+![Python](https://img.shields.io/badge/python-3.9+-blue.svg)
+![Platform](https://img.shields.io/badge/hosted%20on-render-blueviolet)
+![License](https://img.shields.io/badge/license-MIT-green)
+
 This Python-based bot automatically pulls the latest technology news from top sources and emails it to a list of recipients twice a day — at **7:00 AM** and **11:00 PM (EAT)**. Perfect for staying up-to-date without checking multiple sites.
 
 
