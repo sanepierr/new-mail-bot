@@ -3,3 +3,5 @@ python-dotenv
 pytz
 schedule
 sendgrid
+certifi>=2024.0.0
+
