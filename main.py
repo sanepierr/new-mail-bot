@@ -1,6 +1,6 @@
 import os
 from sendgrid import SendGridAPIClient
-from sendgrid.helpers.mail import Mail
+from sendgrid.helpers.mail import Mail, Email
 from utils import get_headlines, format_email
 from dotenv import load_dotenv
 
@@ -14,12 +14,18 @@ def send_email():
     headlines = get_headlines()
     content = format_email(headlines)
 
+    # message = Mail(
+    #     from_email=sender,
+    #     to_emails=recipients,
+    #     subject="Daily Tech Digest",
+    #     html_content=content
+    # )
     message = Mail(
-        from_email=sender,
-        to_emails=recipients,
-        subject="🗞️ Your Daily Tech Digest",
-        html_content=content
-    )
+    from_email=Email(email=sender, name="Tech News Bot"),
+    to_emails=recipients,
+    subject="Daily Tech Digest",
+    html_content=content
+)
 
     try:
         sg = SendGridAPIClient(api_key)
