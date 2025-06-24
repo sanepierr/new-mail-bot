@@ -14,12 +14,6 @@ def send_email():
     headlines = get_headlines()
     content = format_email(headlines)
 
-    # message = Mail(
-    #     from_email=sender,
-    #     to_emails=recipients,
-    #     subject="Daily Tech Digest",
-    #     html_content=content
-    # )
     message = Mail(
     from_email=Email(email=sender, name="Tech News Bot"),
     to_emails=recipients,
