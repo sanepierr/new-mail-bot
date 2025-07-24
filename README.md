@@ -22,7 +22,7 @@ This Python-based bot automatically pulls the latest technology news from top so
 -  Sends well-formatted emails using **SendGrid**
 -  Supports multiple recipients
 -  Automatically runs at scheduled times
--  Deployable on **Render (free tier)**
+-  Deployable on Render
 
 ---
 
